@@ -8,3 +8,8 @@ Requires [xdotool](https://github.com/jordansissel/xdotool) to be installed
 Run `./install.sh` to install
 
 Alternatively, manually copy both `lldb_breakpoint_hook.py` and `.lldbinit` to the home directory.
+
+If using VS Code and CodeLLDB, add this line to your `settings.json` to enable loading of the `.lldbinit`:
+```json
+"lldb.launch.initCommands": ["command source ${env:HOME}/.lldbinit"]
+```
